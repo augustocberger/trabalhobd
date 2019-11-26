@@ -15,7 +15,7 @@ class MoradoresTableSeeder extends Seeder
             'cpf'=>rand (100,999).".".rand(100,999).".".rand(100,999)."-".rand(00,99),
             'nome'=> Str::random(10),
             'endereco'=> Str::random(10),
-            'telefone'=> rand (1000,9999).".".rand(1000,9999)
+            'telefone'=> rand (3000,3999)."-".rand(1000,9999)
         ]);
     }
 }

@@ -16,7 +16,7 @@ class Bens_morador extends Model
 {
 
     public $table = 'bens_morador';
-    
+
     public $timestamps = false;
 
 
@@ -47,5 +47,8 @@ class Bens_morador extends Model
         'ID_Morador' => 'required'
     ];
 
-    
+    public function bem_morador()
+    {
+        return $this->BelongsToMany(Bens::class,'id_bem');
+    }
 }

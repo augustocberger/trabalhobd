@@ -16,7 +16,7 @@ class PecasTableSeeder extends Seeder
         DB::table('Pecas')->insert([
             'peca'=> Str::random(10),
             'valor'=> rand (100,9999),
-            'id_fornecedor'=>$fornecedores[0]->id
+            'id_fornecedor'=>$fornecedores[rand(00,count($fornecedores)-1)]->id
         ]);
     }
 }

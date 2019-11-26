@@ -17,8 +17,8 @@ class BensMoradoresTableSeeder extends Seeder
         $bens= Bens::all()->random()->get('id');
 
         DB::table('Bens_morador')->insert([
-            'id_bem'=> $bens[0]->id,
-            'id_morador'=>$moradores[0]->id
+            'id_bem'=> $bens[rand(00,count($bens)-1)]->id,
+            'id_morador'=>$moradores[rand(00,count($bens)-1)]->id
         ]);
     }
 }
