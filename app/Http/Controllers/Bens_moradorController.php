@@ -11,6 +11,7 @@ use Flash;
 use Response;
 use App\Models\Bens;
 use App\Models\Moradores;
+
 class Bens_moradorController extends AppBaseController
 {
     /** @var  Bens_moradorRepository */
